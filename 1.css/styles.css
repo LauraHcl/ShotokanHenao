@@ -1,18 +1,22 @@
 @font-face {
     font-family: 'japon';
-    src: url ('/fuente/go3v2.ttf');
+    src: url([ ttf (./fuente/go3v2) ] | local( <gang of three> ))
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap');
 
 
-a, a:hover, a:focus, a:active {
+a:hover, a:focus, a:active {
+    text-decoration: none; 
+}
+
+.decoration-none{
     text-decoration: none;
-    color: inherit; }
+    
+}
 
 #botonera img{
     width: 50px;
-    color: white;
 }
 
 
@@ -22,12 +26,12 @@ a, a:hover, a:focus, a:active {
 }
 
 .japon-font_dark{
-    font-family: japon, Rampart One;
+    font-family: japon, Bebas;
     color: black; 
 }
 
 .japon-font_light{
-    font-family: japon, Rampart One;
+    font-family: japon, Bebas+Neue&family;
     color: white;
 }
 
@@ -39,6 +43,11 @@ a, a:hover, a:focus, a:active {
     font-size: medium;
 }
 
+.font_center{
+    text-align: center;
+}
+
+
 body{
     background-image: url(../imagenes/tig-gray-textured-background.jpg);
     background-size:cover;
@@ -46,6 +55,35 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 
+}
+
+
+
+#articles {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+    margin-top: 15px;
+}
+
+.articles_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+.item_colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_dark{
+    background-color:  rgba(0, 0, 0, 0.89);
+    margin: auto auto 10px auto;
+    height: 130px;
+    color: white;
 }
 
 

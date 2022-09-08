@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <!-- Mi CSS -->
+  <!-- Mi CSS -->
     <link rel="stylesheet" href="./1.css/styles.css"> 
-    <link rel="stylesheet" href="1.css/animate.css">
+    <link rel="stylesheet" href="./1.css/animate.css">
     
     <title>KARATE CLUB SHOTOKAN</title>
     <link rel="shortcut icon" href="./imagenes/svg-_logo-shotokan.svg">
@@ -17,10 +17,10 @@
      
 </head>
 <body>
-    <!-- inicia nav -->
+  <!-- inicia nav -->
     <nav class="navbar navbar-expand-lg bg-black" id="botonera">
         <div class="container-fluid">
-            <a class="navbar-brand" href="Index.html">
+            <a class="navbar-brand decoration-none" href="Index.html">
               <img class="animate__rollIn" src="./imagenes/svg-_logo-shotokan.svg" alt="logo de karate shotokan" width="30" height="37" class="d-inline-block align-text-top">
               <p class="japon-font_light font-m animate__flipInX">Shotokan
             </a>
@@ -37,8 +37,14 @@
               <li class="nav-item">
                 <a  class="nav-link" href="tienda.html">Tienda</a>
               </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="nosotros.html">Nosotros</a>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="maps.html">Sedes</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a  class="nav-link" href="contactanos.html">Contáctanos</a>
@@ -47,11 +53,11 @@
           </div>
         </div>
       </nav>
- <!-- termina nav -->
+    <!-- termina nav -->
 
 
     <header>
-       <!-- inicia carousel -->
+    <!-- inicia carousel -->
  <div id="carouselExampleControls" class="carousel slide animate__fadeInDown" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -71,50 +77,99 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
- <!-- termina carousel -->
-    </header>
+  <!-- termina carousel -->
+  </header>
 
     <main>
 
-        <section class="">
-        <h1>karate shotokan medellin</h1>
-            <a class="" href="wa.link/2i2abf" target="_blank">Escribenos a Whatsapp
-            </a>
+        <section class="item_colum bg_dark">
+        <h1 class="japon-font_light" >KARATE EN MEDELLIN</h1>
+            <a href="wa.link/2i2abf" target="_blank">
+              <button type="button" class="btn btn-success">Escribenos a Whatsapp</button>
+            </a> 
         </section>
 
     
-        <section id="">
-            <div class="">
-             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique sed fuga unde mollitia sit perspiciatis excepturi animi? Atque quod repellendus porro consectetur neque expedita omnis? Architecto repudiandae iure sapiente? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam modi atque obcaecati suscipit eos possimus reprehenderit consectetur ea recusandae! Quod placeat doloribus, cumque cum et pariatur alias necessitatibus perferendis perspiciatis?</p>
-             <br>
-              <a href="./nosotros.html" class=""> Conocer más </a>
+        <section class="container text-center">
+            <div class="row">
+              <div class="col">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique sed fuga unde mollitia sit perspiciatis excepturi animi? Atque quod repellendus porro consectetur neque expedita omnis? Architecto repudiandae iure sapiente? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam modi atque obcaecati suscipit eos possimus reprehenderit consectetur ea recusandae! Quod placeat doloribus, cumque cum et pariatur alias necessitatibus perferendis perspiciatis?</p>
+                <br>
+                <a href="./nosotros.html">
+                  <button type="button" class="btn btn-dark">Conoce más...</button>
+                </a>
+              </div>
+              <div class="col">
+                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.052820999062!2d-75.59236158573412!3d6.256772327943619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290e4f870f69%3A0xf57f97b59ef52c39!2sEstadio%20de%20F%C3%BAtbol%20Atanasio%20Girardot!5e0!3m2!1ses-419!2sco!4v1659642738788!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Visitanos en nuestra sede principal</p>
+              </div>
+            </div>
+        </section>
+
+      <!-- inicia form -->
+        <section class="item_colum bg_dark" >
+          <h2 class=""> <strong>Inscríbete a una clase de prueba GRATIS!</strong></h2>
+          <form class="row gy-2 gx-3 align-items-center">
+            
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInput">Nombre</label>
+              <input type="text" class="form-control" id="autoSizingInput" placeholder="Nombre y Apellido">
             </div>
 
-            <div class="">
-            <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.052820999062!2d-75.59236158573412!3d6.256772327943619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290e4f870f69%3A0xf57f97b59ef52c39!2sEstadio%20de%20F%C3%BAtbol%20Atanasio%20Girardot!5e0!3m2!1ses-419!2sco!4v1659642738788!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               <h4>Visitanos en nuestra sede principal</h4>
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingInput">Edad</label>
+              <input type="number" class="form-control" id="autoSizingInput" placeholder="Edad">
             </div>
+
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingSelect">Programa</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>clases</option>
+                <option value="1">Karate Do</option>
+                <option value="2">KarateBox</option>
+              </select>
+            </div>
+            
+            <div class="col-auto">
+              <label class="visually-hidden" for="autoSizingSelect">Sede de interés</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected>Sede</option>
+                <option value="1">La Mota</option>
+                <option value="2">Estadio</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </div>
+          </form>
         </section>
+      <!-- termina form -->
 
 
-        <section class="">
-            <h2 class=""> <strong>Inscribete a una clase de Karate de prueba GRATIS</strong></h2>
-            <form class="" action="envio.php">
-                <label for="nombre">Nombre completo:</label>
-                 <input type="text" id="nombre" required>
-                <label for="celular">    Número de celular</label>
-                 <input type="tel" id="celular" required>
-                <label for="edad">Edad</label>
-                 <input type="number" id="edad">
-                <label for="sede">Sede de interés</label>
-                 <input type="text" id="sede" placeholder="Estadio o La Mota">
-                 <input type="submit" value="Enviar"> 
-            </form>
-        </section>
-        <section class="" >
-            <img src="./imagenes/IMG-_ULTIMA_NOTICIA_INDEX.png" alt="ultima noticia del club, niña con su medalla">
-            <img src="./imagenes/svg-_IMG-HORARIO.svg" alt="Horarios. para sede la mota: lunes a jueves de 5 a 7pm y en la sede estadio: sabado 10am a 1pm y domingo 9am a 12pm, los miercoles clase de reposicion 5pm">
-        </section>
+        <section class="articles_flex">
+    
+            <article id="articles" class="card" style="width: 35rem;">
+              <img src="./imagenes/IMG-_ULTIMA_NOTICIA_INDEX.png" class="card-img-top" alt="ultima noticia del club, niña con su medalla">
+              <div class="card-body">
+                <h5 class="card-title">Entérate</h5>
+                <p class="card-text">El pasado 14 de agosto 2022 se llevó a cabo el torneo de karate de Marinilla en el que nuestros deportistas debutaron de la mejor manera llevando a casa medallas de oro, plata y bronce...</p>
+                <a href="https://drive.google.com/drive/folders/1DUf_ODRYVVcvhT_EhKK0mb8hcBNFmboG?usp=sharing" class="btn btn-primary">Multimedia del evento</a>
+              </div>
+            </article>
+          
+
+         
+            <article id="articles" class="card" style="width: 35rem;">
+              <img src="./imagenes/svg-_IMG-HORARIO.svg" class="card-img-top" alt="Horarios. para sede la mota: lunes a jueves de 5 a 7pm y en la sede estadio: sabado 10am a 1pm y domingo 9am a 12pm, los miercoles clase de reposicion 5pm">
+              <div class="card-body">
+                <h5 class="card-title">Prográmate</h5>
+                <p class="card-text">El horario está sujeto a la disponibilidad de cupos en cada grupo.</p>
+                <a href="wa.link/2i2abf" class="btn btn-primary">Inscribirme</a>
+              </div>
+            </article>
+        
+      </section>
+        
    
     </main>
     
