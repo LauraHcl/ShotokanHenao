@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="esp">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIENDA SHOTOKAN</title>
-    <link rel="shortcut icon" href="./imagenes/minilogo.png">
-    <script src="https://kit.fontawesome.com/fb7cf28c9e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css_shotokan/style2.0.css">
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
+  <!-- Mi CSS -->
+    <link rel="stylesheet" href="./1.css/styles.css"> 
+    <link rel="stylesheet" href="./1.css/animate.css">
+    
+    <title>KARATE CLUB SHOTOKAN</title>
+    <link rel="shortcut icon" href="./imagenes/svg-_logo-shotokan.svg">
+    <script src="https://kit.fontawesome.com/fb7cf28c9e.js" crossorigin="anonymous"></script>
+     
 </head>
 
 <body>
     <!-- inicia nav -->
     <nav class="navbar navbar-expand-lg bg-black" id="botonera">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="Index.html">
-              <img class="animate__rollIn" src="./imagenes/svg-_logo-shotokan.svg" alt="logo de karate shotokan" width="30" height="37" class="d-inline-block align-text-top">
-              <p class="japon-font_light font-m animate__flipInX">Shotokan
-            </a>
+      <div class="container-fluid">
+          <a class="navbar-brand decoration-none" href="Index.html">
+            <img class="wow rollIn" src="./imagenes/svg-_logo-shotokan.svg" alt="logo de karate shotokan" width="30" height="37" class="d-inline-block align-text-top">
+            <p class="japon-font_light font-m">Shotokan
+          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="clases.html">Clases</a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="contactanos.html">Contáctanos</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="clases.html">Clases</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="tienda.html negrita-font">Tienda</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="maps.html">Sedes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="contactanos.html">Contáctanos</a>
+            </li>
+          </ul>
         </div>
-      </nav>
- <!-- termina nav -->
+      </div>
+    </nav>
+  <!-- termina nav -->
 
 
-    <header>
+    <header id="titulo-1" class="animate__bounceInLeft">
         <h1>Los mejores productos en la Tienda Shotokan</h1>
     </header>
 
-    <main id="productos">
-        <section class="galeria">
-        
-            <figure>
-                <h2>Camisetas</h2>
-                <img src="./imagenes/IMG-_PRODUCTO-TIENDA1.png" alt="camiseta del club">
-                <a href="wa.link/2i2abf">
-                    <p class="BotonPedirWpp">Hacer pedido a whatsapp <i class="fa-brands fa-whatsapp fa-xs"></i></p>
-                </a>
-            </figure>
+    <main>
+        <section class="animate__fadeInRight" id="productos">
 
-            <figure>
+          <figure id="font_figure" class="figure margin_f">
+            <h2>Camisetas</h2>
+            <img class="img-fluid img_m shadow-lg" src="./imagenes/IMG-_PRODUCTO-TIENDA1.png" class="figure-img img-fluid rounded" alt="camiseta del club">
+            <figcaption id="caption_black" class="figure-caption">Hecho por Shotkan</figcaption>
+            <a href="wa.link/2i2abf">
+                     <button type="button" class="btn btn-black--alfa">Hacer pedido <i class="fa-brands fa-whatsapp fa-xs"></i></button>
+              </a>
+          </figure>
+
+            <figure id="font_figure" class="figure margin_f">
                 <h2>Accesorios</h2>
-                <img src="./imagenes/IMG-_PRODUCTO-TIENDA2.png" alt="Gorra del club">
-                <a href="wa.link/2i2abf">
-                    <p class="BotonPedirWpp">Hacer pedido a whatsapp <i class="fa-brands fa-whatsapp fa-xs"></i></p>
-                </a>
+                <img class="img-fluid img_m shadow-lg" src="./imagenes/IMG-_PRODUCTO-TIENDA2.png" alt="Gorra del club">
+                <figcaption id="caption_black" class="figure-caption ">Hecho por Shotkan</figcaption>
+            <a href="wa.link/2i2abf">
+                     <button type="button" class="btn btn-black--alfa">Hacer pedido <i class="fa-brands fa-whatsapp fa-xs icon_green"></i></button>
+              </a>
             </figure>
     
         
-            <figure>
+            <figure id="font_figure" class="figure margin_f">
             <h2>Uniformes</h2>
-                <img src="./imagenes/IMG-_PRODUCTO-TIENDA3.png" alt="Deportista con karategui puesto">
-                <a href="wa.link/2i2abf">
-                    <p class="BotonPedirWpp">Hacer pedido a whatsapp <i class="fa-brands fa-whatsapp fa-xs"></i></p>
-                </a>
+                <img class="img-fluid img_m shadow-lg" src="./imagenes/IMG-_PRODUCTO-TIENDA3.png" alt="Deportista con karategui puesto">
+                <figcaption id="caption_black" class="figure-caption">Distribuidor HecFab</figcaption>
+            <a href="wa.link/2i2abf">
+                     <button type="button" class="btn btn-black--alfa">Hacer pedido <i class="fa-brands fa-whatsapp fa-xs"></i></button>
+              </a>
             </figure>
 
-            <figure>
+            <figure id="font_figure" class="figure margin_f">
             <h2>Implementación</h2>
-                <img src="./imagenes/IMG-_PRODUCTO-TIENDA4.png" alt="guantines de karate azules y rojos">
-                <a href="wa.link/2i2abf">
-                    <p class="BotonPedirWpp">Hacer pedido a whatsapp <i class="fa-brands fa-whatsapp fa-xs"></i></p>
-                </a>
+                <img class="img-fluid img_m shadow-lg" src="./imagenes/IMG-_PRODUCTO-TIENDA4.png" alt="guantines de karate azules y rojos">
+                <figcaption id="caption_black" class="figure-caption">Distribuidor Daedo y Arawaza</figcaption>
+            <a href="wa.link/2i2abf">
+                     <button type="button" class="btn btn-black--alfa">Hacer pedido <i class="fa-brands fa-whatsapp fa-xs"></i></button>
+              </a>
             </figure>
         
         </section>
 
-        <section>
-            <a href="wa.link/2i2abf">  
-                <h2>  <i class="fa-brands fa-whatsapp fa-xl"></i> Haz tu pedido en whatsapp</h2>
-                <h2 class="boton-wpp">Click Aquí</h2>
-            </a>
+        <section class="margin_bt"> 
+              <button type="button" class="btn btn-black" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Precios Competitivos, Domicilio en Medellín y Envíos Nacionales">
+        
+                <strong>Animate a comprar!! </strong> 
+                <a href="wa.link/2i2abf"><i class="fa-brands fa-whatsapp fa-xl"></i>
+                </a>
+              </button>
+          
         </section>
 
     </main>
 
     
-    <footer>
-        
-    </footer>
+    <footer id="footer-">
+      <a href="Index.html">  
+       <img class="animate__rollIn img_xs" src="./imagenes/svg-_logo-shotokan.svg" alt="logo club shotokan"> 
+     </a>
+
+     <div class="foot-icon">
+        <a href="https://instagram.com/karate.shotokan.medellin?igshid=YmMyMTA2M2Y=" target="_blank">
+         <i class="fa-brands fa-square-instagram fa-2xl"></i>
+        </a>
+     
+       <a href="https://www.facebook.com/shotokan.medellin.3" target="_blank">
+         <i class="fa-brands fa-square-facebook fa-2xl"></i>  
+        </a>
+     
+        <a href="https://youtube.com/channel/UC8JQWgCoFkhNho66eFUyJCA" target="_blank">
+         <i class="fa-brands fa-square-youtube fa-2xl"></i>  
+       </a>
+   </div>
+ </footer>
+  
+ <script src="./2.js/wow.min.js"></script>
+ <script>
+ new WOW().init();
+ </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
