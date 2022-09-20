@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'japon';
-    src: url([ttf (./fuente/go3v2)] | local( <gang of three> ))
+    font-family: japon;
+    src: url(../fuente/go3v2.ttf) format("truetype"),
+    url(../fuente/go3v2.ttf) format("truetype")
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap');
 
 
 .decoration-none{
-    text-decoration: none;
-    
-}
+    text-decoration: none;  
+}$
 
 #footer-{
     display: flex;
@@ -19,7 +19,7 @@
     background-color: rgba(0, 0, 0, 0.795);
     margin-top: 40px;
     
-}
+}$
 
 .foot-icon{
     width: 150px;
@@ -28,44 +28,44 @@
     justify-content:space-around;
     align-content: center;
     margin:25px 10px;
-}
+}$
 
 #botonera img{
-    width: 50px;
-}
+    width: 60px;
+}$
 
 .negrita-font{
     font-weight: 800;
-}
+}$
 
 
 .bg-black{
     background-color: rgba(0, 0, 0, 0.795);
     color: white;
-}
+}$
 
 .japon-font_dark{
     font-family: japon, Bebas+Neue&family;
     color: black; 
-}
+}$
 
 .japon-font_light{
     font-family: japon, Bebas+Neue&family;
     color: white;
-}
+}$
 
 .font-s{
     font-size: small;
-}
+}$
 
 .font-m{
     font-size: medium;
-}
+}$
 
 #font_figure{
     text-align: center;
     color: black;
-}
+}$
 
 
 body{
@@ -75,7 +75,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-}
+}$
 
 
 
@@ -83,63 +83,63 @@ body{
     background-color:rgba(255, 255, 255, 0.220);
     color: rgb(0, 0, 0);
     margin-top: 15px;
-}
+}$
 
 #articles-neg {
     background-color: rgba(0, 0, 0, 0.89);
     color: white;
     margin-top: 15px;
-}
+}$
 
 .articles_flex{
     display: flex;
     flex-wrap: wrap;
     align-items:flex-start;
     justify-content: space-around;
-}
+}$
 
 .item_colum{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}$
 
 .bg_dark{
-    background-color:  rgba(0, 0, 0, 0.89);
+    background-color:  rgba(0, 0, 0, 0.90);
     margin: auto auto 10px auto;
-    height: 130px;
+    height: 150px;
     color: white;
-}
+}$
 
 .btn-black{
     background-color: black;
-    color: white;
-}
+    color: rgb(255, 255, 255);
+}$
 
 .btn-withe{
     background-color: white;
     color: black;
-}
+}$
 
 .btn-black--alfa{
-    background-color: rgba(0, 0, 0, 0.431);
+    background-color: rgba(0, 0, 0, 0.40);
     color: white;
-}
+}$
 
 .btn-green{
     background-color: rgba(0, 92, 0, 0.747);
     color: white;
     box-shadow: inset;
-}
+}$
 
 .icon_green{
     color: (0, 92, 0, 0);
-}
+}$
 
 #caption_black{
     color: rgba(0, 0, 0, 0.651);
-}
+}$
 
 
 #productos{
@@ -147,59 +147,59 @@ body{
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-    color: black;
-}
+    color: rgb(0, 0, 0);
+}$
 
 .margin_f{
     margin: 30px 30px;
     text-align: center;
-}
+}$
 
 .margin_bt{
     margin: 20px auto;
     text-align: center;
-}
+}$
 
 .img_m{
     width: 400px;
     border-radius: 1.5rem;
     border: solid 8px rgba(0, 0, 0, 0.431);
-}
+}$
 
 .img_xs{
     width: 60px;
     margin: 10px 10px;
-}
+}$
 
 #titulo-1{
     margin: 30px auto;
     text-align: center;
     font-family: japon, Bebas+Neue&family;
-}
+}$
 
 #parrafo-m{
    font-size: 1.rem;
    font-weight: 500;
    background-color: rgba(255, 255, 255, 0.220);
    padding: 10px 10px;
-} 
+}$
 
 #navbarSupportedContent ul li a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit; 
     text-overflow: clip;
-}
+}$
 
 nav ul li a:hover{
     font-size: 1.1rem;
     font-weight: 600;
-}
+}$
 
 .text-vertical{
     writing-mode: vertical-rl;
-}
+}$
 
-.mapas-s{}
+.mapas-s{}$
 
 /*Media queries*/
 @media (max-width: 767.98px) { 
@@ -235,4 +235,4 @@ nav ul li a:hover{
         margin-bottom: 20px;
      }
 
-    }
+    }$

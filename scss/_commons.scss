@@ -1,0 +1,105 @@
+//paleta de colores
+$keycolor: rgb(0, 0, 0);
+$secondarycolor: rgba(255, 255, 255, 0.220);
+$negro-alfa90: rgba(0, 0, 0, 0.90);
+$negro-alfa40: rgba(0, 0, 0, 0.40)
+$blancoGris: rgb(255, 255, 255);
+$blanco: rgb(255, 255, 255);
+$amarillo: rgb(233, 210, 0);
+$verde-alfa: rgba(0, 92, 0, 0.747);
+$verde: rgba(0, 92, 0);
+
+//bordes
+$bordeRedondeado: 1.5rem;
+$bordeSm: solid 4px;
+$bordeLg: solid 8px;
+
+//imagenes size
+$imgXS: 60px;
+$imgSM: 150px;
+$imgMD: 400px;
+
+//franjas y separadores
+$fanjaSM: 100px;
+$franjaMD: 150px;
+
+
+body{
+    background-image: url(../imagenes/tig-gray-textured-background.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+
+
+
+.bg-black{
+    background-color: $negro-alfa90;
+    color: $blanco;
+    }
+
+ //link de mapas y video
+.mapas-s{
+    border-radius: $bordeRedondeado;
+    border: $bordeSm $amarillo;
+    }
+
+.mapas-s{}
+
+
+//botones
+.btn-black{
+    background-color: $keycolor;
+    color: $blancoGris;
+    }
+
+.btn-withe{
+    background-color: $blanco;
+    color: $keycolor;
+    }
+    
+.btn-black--alfa{
+    background-color: $negro-alfa40;
+    color: $blanco;
+    }
+
+.icon_green{
+    color: $verde;
+    }
+
+
+
+//imagenes general
+.img_m{
+    width: $imgMD;
+    border-radius: $bordeRedondeado;
+    border: $bordeSm $negro-alfa40;
+    }
+
+.img_xs{
+    width: $imgXS;
+    margin: 10px 10px;
+    }
+
+
+//margenes general
+.margin_bt{
+    margin: 20px auto;
+    text-align: center;
+    }
+
+.margin_f{
+    margin: 30px 30px;
+    text-align: center;
+    }
+
+//align
+.item_colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+

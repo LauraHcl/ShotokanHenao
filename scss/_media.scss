@@ -1,0 +1,35 @@
+//responsive @media
+@media (max-width: 767.98px) { 
+    .img_m{ width: 280px;}
+
+    .row{
+       flex-direction: column;
+       flex-wrap: nowrap;
+       width: 90%;
+       height: auto;
+    }
+
+    .bg_dark{
+       width: 100%;
+       height: auto;
+       margin: 20px auto;
+       padding: 10px 10px;
+       align-items: center;
+    }
+
+    .container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .mapas-s{
+       margin: 20px auto;
+    }
+
+    .articles_flex{
+       align-items: center;
+       margin-bottom: 20px;
+    }
+
+   }

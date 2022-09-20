@@ -1,0 +1,31 @@
+
+
+//articles
+
+#articles-wi {
+    background-color:$secondarycolor;
+    color: $keycolor;
+    margin-top: 15px;
+}
+
+.articles_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+#articles-neg {
+    background-color: $negro-alfa90;
+    color:$blanco;
+    margin-top: 15px;
+}
+
+
+//otros
+.bg_dark{
+    background-color: $negro-alfa90;
+    margin: auto auto 10px auto;
+    height: $franjaMD;
+    color: $blanco;
+}

@@ -1,0 +1,31 @@
+//imagen
+#botonera{
+    img{
+    width: $imgXS;
+    }   
+   }
+
+#navbarSupportedContent{
+  ul{
+    li{
+       a:hover, a:focus, a:active{
+          text-decoration: none;
+          color: inherit; 
+          text-overflow: clip;
+         }
+       } 
+    } 
+}
+
+nav{
+    ul{
+        li{
+            a{
+               &:hover{
+                font-size: $textSm;
+                font-weight: $textbold; 
+               }  
+            }
+        }
+    }
+}

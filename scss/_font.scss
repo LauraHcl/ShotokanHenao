@@ -1,0 +1,80 @@
+@font-face {
+    font-family: japon;
+    src: url(../fuente/go3v2.ttf) format("truetype"),
+    url(../fuente/go3v2.ttf) format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap');
+
+$MainFont: Roboto;
+$secondaryfont: japon;
+$SecondTitleFont: Bebas+Neue&; 
+
+//sizings
+$textSm:  1.rem;
+$textMd: 1.5rem;
+$textLg: 2.5rem;
+
+
+//weight
+$textbold: 700;
+$textregukar: 400;
+$textlight: 100;
+
+
+//archivo
+
+.decoration-none{
+    text-decoration: none;  
+}
+
+.negrita-font{
+    font-weight: $textbold;
+}
+
+.japon-font_dark{
+    font-family: $secondaryfont, $SecondTitleFont;
+    color: $keycolor; 
+}
+
+.japon-font_light{
+    font-family: $secondaryfont, $SecondTitleFont;
+    color: $blanco;
+}
+
+.font-s{
+    font-size: $textSm;
+}
+
+.font-m{
+    font-size: $textMd;
+}
+
+.text-vertical{
+    writing-mode: vertical-rl;
+    font-weight: $textbold;
+    font-family: $secondaryfont, $SecondTitleFont;
+    text-align: center;
+}
+
+#parrafo-m{
+    font-size: $textSm;
+    font-weight: $textregukar;
+    font-family: $MainFont;
+    background-color: $secondarycolor;
+    padding: 10px 10px;
+ } 
+
+#titulo-1{
+    margin: 30px auto;
+    text-align: center;
+    font-family: $secondaryfont, $SecondTitleFont;
+}
+
+
+//figures de 
+#font_figure{
+    text-align: center;
+    color: $keycolor;
+}
+

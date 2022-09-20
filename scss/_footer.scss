@@ -1,0 +1,22 @@
+#footer-{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    padding: 20px 15%;
+    background-color: $negro-alfa90;
+    margin-top: 40px;
+    
+    img{
+       width: $imgXS;
+    }
+}
+
+.foot-icon{
+    width: $imgSM;
+    color: $blanco;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    margin:25px 10px;
+}
+
