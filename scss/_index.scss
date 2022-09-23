@@ -1,10 +1,20 @@
 
 
 //articles
+#articles-base{
+    color: $keycolor;
+    margin-top: 15px;
+}
 
 #articles-wi {
     background-color:$secondarycolor;
     color: $keycolor;
+    margin-top: $margings(arriba-normal); xxxxxxxx
+}
+
+#articles-neg {
+    background-color:$negro-alfa90;
+    color:$blanco;
     margin-top: 15px;
 }
 
@@ -15,11 +25,7 @@
     justify-content: space-around;
 }
 
-#articles-neg {
-    background-color: $negro-alfa90;
-    color:$blanco;
-    margin-top: 15px;
-}
+
 
 
 //otros

@@ -1,0 +1,60 @@
+//imagen
+#botonera{
+    img{
+    width: $imgXS;
+    }   
+   }
+
+#navbarSupportedContent{
+  ul{
+    li{
+       a:hover, a:focus, a:active{
+          text-decoration: none;
+          color: inherit; 
+          text-overflow: clip;
+         }
+       } 
+    } 
+}
+
+nav{
+    ul{
+        li{
+            a{
+               &:hover{
+                font-size: $textSm;
+                font-weight: $textbold; 
+               }  
+            }
+        }
+    }
+}
+
+
+
+
+//----------inicia footer------------
+
+$icon-redes: (
+    'instagram':,
+    'facebook':,
+    'youtube':,
+);
+
+#footer-{
+    @include flex(inherit, center, space-around, nowrap);
+    padding: 20px 15%;
+    background-color: $negro-alfa90;
+    margin-top: map-get($map: $margings, $key: 'arriba-ancho');
+    
+    img{
+       width: map-get($map: $imagenes-size, $key: 'imgXS');
+    }
+}
+
+.foot-icon{
+    width: map-get($map: $imagenes-size, $key: 'imgXS');
+    @include flex(inherit, space-around, center, nowrap);
+    margin: map-get($map: $margings, $key: 'arriba-normal');
+}
+

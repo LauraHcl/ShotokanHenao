@@ -2,36 +2,106 @@
 $keycolor: rgb(0, 0, 0);
 $secondarycolor: rgba(255, 255, 255, 0.220);
 $negro-alfa90: rgba(0, 0, 0, 0.90);
-$negro-alfa40: rgba(0, 0, 0, 0.40)
-$blancoGris: rgb(255, 255, 255);
+$negro-alfa40: rgba(0, 0, 0, 0.40);
+$blancoGris: rgb(230, 230, 230);
 $blanco: rgb(255, 255, 255);
+$blanco-alfa90: hsla(0, 0%, 100%, 0.90);
 $amarillo: rgb(233, 210, 0);
 $verde-alfa: rgba(0, 92, 0, 0.747);
 $verde: rgba(0, 92, 0);
 
-//bordes
-$bordeRedondeado: 1.5rem;
-$bordeSm: solid 4px;
-$bordeLg: solid 8px;
+//maps SASS
+$background-img: (
+    'tigre-texturagris-light': url("../imagenes/tig-gray-textured-background.jpg"),
+    'tigre-texturagris-dark': url("../imagenes/tig-graydark-textured"),
+);
 
-//imagenes size
-$imgXS: 60px;
-$imgSM: 150px;
-$imgMD: 400px;
+$margings: (
+    'normal': 20px 20px,
+    'estrecho': 10px 10px,
+    'moderado': 30px 30px,
+    'ancho': 40px 40px,
 
-//franjas y separadores
-$fanjaSM: 100px;
-$franjaMD: 150px;
+    'arriba-normal': 20px,
+    'arriba-estrecho': 10px,
+    'arriba-moderado': 30px,
+    'arriba-ancho': 40px,
 
+    'abajo-normal': 20px,
+    'abajo-estrecho': 10px,
+    'abajo-moderado': 30px,
+    'abajo-ancho': 40px,
+);
 
-body{
-    background-image: url(../imagenes/tig-gray-textured-background.jpg);
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    }
+$paddings:(
+    'normal': 20px 20px,
+    'estrecho': 10px 10px,
+    'moderado': 30px 30px,
+    'ancho': 40px 40px,
 
+    'arriba-normal': 20px,
+    'arriba-estrecho': 10px,
+    'arriba-moderado': 30px,
+    'arriba-ancho': 40px,
+
+    'abajo-normal': 20px,
+    'abajo-estrecho': 10px,
+    'abajo-moderado': 30px,
+    'abajo-ancho': 40px,
+);
+
+$bordes:(
+    'bordeRedondeado': 1.5rem,
+    'bordeBola': 100%,
+    'bordeSm': solid 4px,
+    'bordeLg': solid 8px,
+);
+
+$imagenes-size:(
+    'imgXS': 60px,
+    'imgSM': 150px,
+    'imgMD': 400px,
+);
+
+$franjas-height:(
+'fanjaSM': 100px,
+'franjaMD': 150px,
+);
+
+@mixin bg-paginas100 ($imagen){
+    background-image: $imagen,
+    background-size:cover,
+    background-position: center,
+    background-attachment: fixed,
+    background-repeat: no-repeat,
+};
+
+.bg-pagina-dark{
+    @include bg-paginas100($tigre-texturagris-dark)
+}
+
+.bg-pagina-light{
+    @include bg-paginas100($tigre-texturagris-light)
+}
+
+@mixin flex($direc, $justify, $align, $wrap) {
+    display: flex; 
+    flex-direction: $direc;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin align-flex-vertical ($align) {
+    display: flex;
+    align-items: $align;
+}
+   
+
+@mixin align-flex-horizontal ($justify) {
+    display: flex;
+    justify-content: $justify;
+}
 
 
 .bg-black{
@@ -39,14 +109,16 @@ body{
     color: $blanco;
     }
 
+#bg-wite{
+    background-color: $blanco-alfa90;
+    color: $keycolor;
+}
+
  //link de mapas y video
+
 .mapas-s{
-    border-radius: $bordeRedondeado;
-    border: $bordeSm $amarillo;
+    border-radius: map-get($map: $bordes, $key: 'bordeRedondeado') ;
     }
-
-.mapas-s{}
-
 
 //botones
 .btn-black{
@@ -70,20 +142,38 @@ body{
 
 
 
-//imagenes general
+//imagenes general       .map get.
 .img_m{
-    width: $imgMD;
-    border-radius: $bordeRedondeado;
-    border: $bordeSm $negro-alfa40;
+    width: map-get($map: $imagenes-size, $key: 'imgMD');
     }
+
+.img_m-redondeado{
+    @extend .img_m;
+     border-radius: $bordeRedondeado;
+     border: $bordeSm $negro-alfa40;
+}
+
+.img_m-bola-shadow{
+    @extend .img_m;
+    border-radius: $bordeBola;
+    box-shadow: 2rem;
+}
 
 .img_xs{
     width: $imgXS;
-    margin: 10px 10px;
-    }
+    margin: map-get($map: $margings, $key: 'estrecho')
+}
 
 
 //margenes general
+#row-card{
+    @include align-flex-vertical(center);
+        div{
+            img{
+             border-radius: map-get($map: $bordes, $key: 'bordeRedondeado');
+            }
+        }
+}
 .margin_bt{
     margin: 20px auto;
     text-align: center;
@@ -96,10 +186,6 @@ body{
 
 //align
 .item_colum{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column, center, center, nowrap);
+    width: map-get($map: $franjas-height, $key: 'franjaMD');
 }
-
-

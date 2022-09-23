@@ -1,1 +1,236 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&display=swap");
+body {
+  background-image: url(../imagenes/tig-gray-textured-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+}
+
+.mapas-s {
+  border-radius: 1.5rem;
+  border: solid 4px rgb(233, 210, 0);
+}
+
+.btn-black {
+  background-color: rgb(0, 0, 0);
+  color: rgb(230, 230, 230);
+}
+
+.btn-withe {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.btn-black--alfa {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+}
+
+.icon_green {
+  color: rgb(0, 92, 0);
+}
+
+.img_m {
+  width: 400px;
+  border-radius: 1.5rem;
+  border: solid 4px rgba(0, 0, 0, 0.4);
+}
+
+.img_xs {
+  width: 60px;
+  margin: 10px 10px;
+}
+
+.margin_bt {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.margin_f {
+  margin: 30px 30px;
+  text-align: center;
+}
+
+.item_colum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: japon;
+  src: url(../1.css/go3v2.ttf) format("truetype");
+  src: url(../1.css/go3v2.ttf) format("truetype");
+}
+.decoration-none {
+  text-decoration: none;
+}
+
+.negrita-font {
+  font-weight: 700;
+}
+
+.japon-font_dark {
+  font-family: japon, BebasNeue;
+  color: rgb(0, 0, 0);
+}
+
+.japon-font_light {
+  font-family: japon, BebasNeue;
+  color: rgb(255, 255, 255);
+}
+
+.bebas-font_light {
+  font-family: BebasNeue;
+  color: rgb(255, 255, 255);
+}
+
+.font-s {
+  font-size: 1rem;
+}
+
+.font-m {
+  font-size: 1.5rem;
+}
+
+.text-vertical {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-weight: 700;
+  font-family: japon, BebasNeue;
+  text-align: center;
+}
+
+#parrafo-m {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Roboto;
+  background-color: rgba(255, 255, 255, 0.22);
+  padding: 10px 10px;
+}
+
+#titulo-1 {
+  margin: 30px auto;
+  text-align: center;
+}
+
+#font_figure {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+body header h1 {
+  font-family: BebasNeue;
+  color: rgb(255, 255, 255);
+}
+
+#botonera img {
+  width: 60px;
+}
+
+#navbarSupportedContent ul li a:hover, #navbarSupportedContent ul li a:focus, #navbarSupportedContent ul li a:active {
+  text-decoration: none;
+  color: inherit;
+  text-overflow: clip;
+}
+
+nav ul li a:hover {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#articles-wi {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+.articles_flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#articles-neg {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+}
+
+.bg_dark {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: auto auto 10px auto;
+  height: 150px;
+  color: rgb(255, 255, 255);
+}
+
+#footer- {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  padding: 20px 15%;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 40px;
+}
+#footer- img {
+  width: 60px;
+}
+
+.foot-icon {
+  width: 150px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 25px 10px;
+}
+
+@media (max-width: 767.98px) {
+  .img_m {
+    width: 280px;
+  }
+  .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90%;
+    height: auto;
+  }
+  .bg_dark {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px 10px;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapas-s {
+    margin: 20px auto;
+  }
+  .articles_flex {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+#caption_black {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=main.css.map */
