@@ -9,7 +9,7 @@
 #articles-wi {
     background-color:$secondarycolor;
     color: $keycolor;
-    margin-top: $margings(arriba-normal); xxxxxxxx
+    margin-top: map-get($map: $margings, $key: 'arriba-normal');
 }
 
 #articles-neg {
@@ -32,6 +32,6 @@
 .bg_dark{
     background-color: $negro-alfa90;
     margin: auto auto 10px auto;
-    height: $franjaMD;
+    height: map-get($map: $franjas-height, $key: 'franjaMD');
     color: $blanco;
 }

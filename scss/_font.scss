@@ -56,28 +56,28 @@ $textLg: 2.5rem;
 
 .text-vertical{
     writing-mode: vertical-rl;
-    font-weight: $textbold;
+    font-weight: map-get($map:  $text-weight, $key:'textbold');
     font-family: $secondaryfont, $SecondTitleFont;
     text-align: center;
 }
 
 .text-vertical-bold{
     @extend .text-vertical;
-    font-weight: $textbold;
+    font-weight: map-get($map: $text-weight, $key: 'textbold');
  }
 
 #parrafo-m{
     font-size: $textSm;
-    font-weight: $textregular;
+    font-weight: map-get($map: $text-weight, $key: 'textregular');
     font-family: $MainFont;
     background-color: $secondarycolor;
-    padding: $estrecho;
+    padding: map-get($map: $paddings, $key: 'estrecho');
  } 
 
 
 
 #titulo-1{
-    margin: $arriba-moderado auto;
+    margin: map-get($map: $margings, $key: 'arriba-moderado') auto;
     text-align: center;
 }
 
@@ -102,4 +102,7 @@ body{
     }
 }
 
-
+//tienda
+#caption_black{
+    color: $negro-alfa40;
+}

@@ -5,8 +5,9 @@ $negro-alfa90: rgba(0, 0, 0, 0.90);
 $negro-alfa40: rgba(0, 0, 0, 0.40);
 $blancoGris: rgb(230, 230, 230);
 $blanco: rgb(255, 255, 255);
-$blanco-alfa90: hsla(0, 0%, 100%, 0.90);
-$amarillo: rgb(233, 210, 0);
+$blanco-alfa90: rgba(255, 255, 255, 0.90);
+$blanco-alfa40: rgba(255, 255, 255, 0.40);
+$amarillo: rgba(233, 210, 0, 0.63);
 $verde-alfa: rgba(0, 92, 0, 0.747);
 $verde: rgba(0, 92, 0);
 
@@ -68,20 +69,20 @@ $franjas-height:(
 'franjaMD': 150px,
 );
 
-@mixin bg-paginas100 ($imagen){
-    background-image: $imagen,
-    background-size:cover,
-    background-position: center,
-    background-attachment: fixed,
-    background-repeat: no-repeat,
-};
+@mixin bg-paginas100 ($imagen, $size){
+    background-image: $imagen;
+    background-size: $size;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 .bg-pagina-dark{
-    @include bg-paginas100($tigre-texturagris-dark)
+    @include bg-paginas100('tigre-texturagris-dark', cover)
 }
 
 .bg-pagina-light{
-    @include bg-paginas100($tigre-texturagris-light)
+    @include bg-paginas100('tigre-texturagris-light', cover)
 }
 
 @mixin flex($direc, $justify, $align, $wrap) {
@@ -117,7 +118,8 @@ $franjas-height:(
  //link de mapas y video
 
 .mapas-s{
-    border-radius: map-get($map: $bordes, $key: 'bordeRedondeado') ;
+    border-radius: map-get($map: $bordes, $key: 'bordeRedondeado');
+
     }
 
 //botones
@@ -149,19 +151,23 @@ $franjas-height:(
 
 .img_m-redondeado{
     @extend .img_m;
-     border-radius: $bordeRedondeado;
-     border: $bordeSm $negro-alfa40;
+     border-radius: map-get($map:$bordes, $key: 'bordeRedondeado');
+     border: 'bordeSm' $negro-alfa40;
 }
 
 .img_m-bola-shadow{
     @extend .img_m;
-    border-radius: $bordeBola;
+    border-radius: map-get($map:$bordes, $key: 'bordeBola');
     box-shadow: 2rem;
 }
 
 .img_xs{
-    width: $imgXS;
-    margin: map-get($map: $margings, $key: 'estrecho')
+    width: map-get($map: $imagenes-size, $key: 'imgXS');
+    margin: map-get($map: $margings, $key: 'estrecho');
+}
+
+.img_sm{
+    width: map-get($map: $imagenes-size, $key: 'imgSM');
 }
 
 
@@ -174,18 +180,89 @@ $franjas-height:(
             }
         }
 }
+
 .margin_bt{
     margin: 20px auto;
     text-align: center;
     }
 
 .margin_f{
-    margin: 30px 30px;
+    margin: map-get($map: $margings, $key: 'moderado');
     text-align: center;
     }
+
+.margin-normal{
+    margin: map-get($map: $margings, $key: 'normal');
+}
+
+.margin-moderado{
+    margin: map-get($map: $margings, $key: 'moderado');
+}
 
 //align
 .item_colum{
     @include flex(column, center, center, nowrap);
     width: map-get($map: $franjas-height, $key: 'franjaMD');
+}
+
+//TIENDA
+#productos{
+    @include flex(row, space-around, center, wrap);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: $keycolor;
+}
+
+//NOSOTROS
+
+.padding-estrecho{
+    padding: map-get($map: $paddings, $key: 'normal');
+}
+
+#icons{
+    @include flex(row, space-evenly, center, nowrap);
+    background-color: $blanco-alfa40;
+    margin: map-get($map: $margings, $key: 'moderado');
+    height: 150px;
+}
+
+.hist{
+    @include flex(row, space-evenly, center, nowrap);
+    align-self: center;
+    margin: map-get($map: $margings, $key: 'normal');
+}
+
+
+#ini{
+    @include flex(row, space-evenly, center, wrap);
+    align-self: center;
+    margin: map-get($map: $margings, $key: 'normal');
+}
+
+#posi{
+    @include flex(row, space-evenly, center, wrap);
+    align-self: center;
+    margin: map-get($map: $margings, $key: 'normal');
+    background-color: $negro-alfa40;
+}
+
+#now{
+    @include flex(row, space-evenly, center, wrap);
+    align-self: center;
+    margin: map-get($map: $margings, $key: 'normal');
+}
+
+//MAPAS
+
+
+#mapas-flex{
+    @include flex(column, center, center, wrap);
+    margin: map-get($map: $margings, $key: 'normal');
+    align-content: center;
+}
+
+#CardSize{
+    width: 45rem;
 }

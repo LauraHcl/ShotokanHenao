@@ -1,7 +1,7 @@
 //imagen
 #botonera{
     img{
-    width: $imgXS;
+    width: map-get($map: $imagenes-size, $key: 'imgXS');
     }   
    }
 
@@ -23,7 +23,7 @@ nav{
             a{
                &:hover{
                 font-size: $textSm;
-                font-weight: $textbold; 
+                font-weight: map-get($map: $text-weight, $key: 'textbold'); 
                }  
             }
         }
@@ -34,12 +34,6 @@ nav{
 
 
 //----------inicia footer------------
-
-$icon-redes: (
-    'instagram':,
-    'facebook':,
-    'youtube':,
-);
 
 #footer-{
     @include flex(inherit, center, space-around, nowrap);

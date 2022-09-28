@@ -32,4 +32,34 @@
        margin-bottom: 20px;
     }
 
+    #mapas-flex{
+      section{
+         width: 40rem;
+      }
+    }
+
+
+   h1{
+      text-align: center;
+      justify-content: center;
    }
+
+   #mapas-flex{
+      flex-wrap: nowrap;
+   }
+
+   #row-card{
+      flex-wrap: nowrap;
+      align-items: center;
+   }
+
+   #icons{
+      div{
+         img{
+            width: map-get($map: $imagenes-size, $key: 'imgXS');
+         }
+      }
+   }
+
+}
+
