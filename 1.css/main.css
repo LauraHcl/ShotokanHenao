@@ -176,6 +176,17 @@
   flex-wrap: nowrap;
   align-self: center;
   margin: 20px 20px 20px 20px;
+  flex-wrap: nowrap;
+}
+
+.sub-hist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-self: center;
+  width: auto;
 }
 
 #ini {
@@ -224,6 +235,10 @@
   align-items: space-evenly;
   flex-wrap: nowrap;
   margin: 10px 10px;
+}
+
+#mapas-contacto section iframe {
+  width: 400px;
 }
 
 #article-center {
@@ -447,5 +462,15 @@ nav ul li a:hover {
   }
   #icons div img {
     width: 60px;
+  }
+  #mapas-contacto {
+    display: flex;
+    justify-content: center;
+  }
+  #mapas-contacto section iframe {
+    width: 240px;
+  }
+  .hist {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

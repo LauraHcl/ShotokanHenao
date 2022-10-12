@@ -277,6 +277,13 @@ $franjas-height:(
     @include flex(row, space-evenly, center, nowrap);
     align-self: center;
     margin: map-get($map: $margings, $key: 'normal');
+    flex-wrap: nowrap
+}
+
+.sub-hist{
+    @include flex(row, space-evenly, center, nowrap);
+    align-self: center;
+    width: auto;
 }
 
 
