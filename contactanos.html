@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Contactanos" content="Aquí encuentras los canales por los que actualmente puedes comunicarte con nosotros y por el cual tambien escuchamos tus dudas y soliciyudes">
+    <meta name="Contactanos">
+    <meta description="Aquí encuentras los canales por los que actualmente puedes comunicarte con nosotros y por el cual tambien escuchamos tus dudas y soliciyudes">
     <meta name="keywords" content="karate, boxeo, deporte, entrenamiento">
     <meta name="author" content="Laura Henao">
   <!-- Bootstrap CSS -->
@@ -19,9 +20,9 @@
     <script src="https://kit.fontawesome.com/fb7cf28c9e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-pagina-light">
     <!-- inicia nav -->
-    <nav class="navbar navbar-expand-lg bg-black" id="botonera">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-black" id="botonera">
         <div class="container-fluid">
             <a class="navbar-brand link-light decoration-none" href="Index.html">
               <img class="animate__rollIn" src="./imagenes/svg-_logo-shotokan.svg" alt="logo de karate shotokan" width="30" height="37" class="d-inline-block align-text-top">
@@ -50,6 +51,11 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
+                    <a class="dropdown-item" href="contactanos.html">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg> Contacto</a></li>
+
+                  <li>
                     <a class="dropdown-item" href="maps.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                       <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                     </svg> Sedes</a></li>
@@ -62,68 +68,66 @@
     <!-- termina nav -->
 
     <header>
-        <h1>Contàctanos</h1> 
+        <h1 class="japon-font_light font-center">Contáctanos</h1> 
     </header>
 
-    <main>
-        <section>
-            <a href="https://instagram.com/karate.shotokan.medellin?igshid=YmMyMTA2M2Y="><h2>Siguenos en Instagram</h2></a>
-            <h3>Intro de lo que ecuentras en  nuestro instagram Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <img src="./imagenes/IMG-_INSTAGRAM.png" alt="icono de instagram">
-        </section>
+<main>
+  <!-- cards -->
+  <section class="articles_flex">
+    <article id="articles-wi" class="card" style="width: 30rem;">
+      <img src="./imagenes/-instagram_icono.png" class="img_sm card-img-top" alt="icono de instagram">
+      <div class="card-body">
+        <h2 class="card-title japon-font_dark">Síguenos en Instagram</h2>
+        <h3 class="font-s card-text">Entérate de todo lo que hacemos, talleres, descuentos, material audiovisual de nuestras clases, torneos, tips de karate/boxeo y mucho más!!</h3>
+        <a href="https://instagram.com/karate.shotokan.medellin?igshid=YmMyMTA2M2Y=" class="btn btn-black" target="_blank"><h2>Instagram</h2></a>
+      </div>
+    </article>
 
-        <section>
-            <a href="wa.link/2i2abf"><h2>Escribenos a Whatsapp</h2></a>
-            <h3>Respecto al servicio que te brindamos en Whatsapp Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <img src="./imagenes/IMG-_WHATSAPP.png" alt="icono de Whatsapp">
-        </section>
+    <article id="articles-wi" class="card" style="width: 30rem;">
+      <img src="./imagenes/wpp_icono.png" class="img_sm card-img-top" alt="icono de Whatsapp">
+      <div class="card-body">
+        <h2 class="card-title japon-font_dark">Escríbenos a Whatsapp</h2>
+        <h3 class="font-s card-text">Escríbenos a nuestra linea directa, con gusto atenderemos tus dudas, sugerencias y recibimos pedidos de nuestras tienda. (Atención habitual de 9:00am hasta las 7:00pm)</h3>
+        <a href="wa.link/2i2abf" class="btn btn-black" target="_blank"><h2>Whatsapp</h2></a>
+      </div>
+    </article>
+  </section>
+<!-- fin cards -->
 
-        <section>
-            <h2>Visitanos en nuestras sedes</h2>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.052820999062!2d-75.59236158573412!3d6.256772327943619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290e4f870f69%3A0xf57f97b59ef52c39!2sEstadio%20de%20F%C3%BAtbol%20Atanasio%20Girardot!5e0!3m2!1ses-419!2sco!4v1659642738788!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3>Sede principal Estadio</h3>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5926994577728!2d-75.59912857083762!3d6.214732932942363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e76eaf16b1%3A0xff1d844e530d3e2f!2sTv.%204a%20%232a-128%20a%202a-214%2C%20Medell%C3%ADn%2C%20Bel%C3%A9n%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1660802847162!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h3>Sede la Mota</h3> 
-        </section>
-
-        <section>
-            <img src="./imagenes/IMG-_PQRS.png" alt="icono de carta">
-            <h2>P.Q.R.S</h2>
-            <form action="envio.php">
-                <label for="comentario"> <h2>Dejanos tus PQRS</h2> </label>
-                <br>
-                <label for="nombre"> </label>
-                 <input type="text" id="nombre" placeholder="Nombre completo">
-                  <br>
-                 <textarea name="" id="comentario" cols="30" rows="10"></textarea>
-                 <br>
-                 <input type="reset" value="Cancelar">
-                 <input type="submit" value="Enviar"> 
-            </form>
+    <section id="article-center" class="marg-top-normal item_colum">
+      <img src="./imagenes/icono-_pqrs.svg" class="img_xs" alt="icono de carta">
+      <form action="envio.php">
+          <label for="comentario"> <h2 class="japon-font_dark" >Escríbenos tus PQRS</h2> </label>
+          <br>
+          <label for="nombre"> </label>
+          <input type="text" id="nombre" placeholder="Nombre completo">
+          <br>
+          <textarea name="" id="comentario" cols="30" rows="10"></textarea>
+          <br>
+          <a href="./404.html" class="btn btn-black" target="_blank">Enviar</a> <!-- error 404 -->
+      </form>
         </section>
     </main>
     
     <footer id="footer-">
       <a href="Index.html">  
-       <img class="animate__rollIn img_xs" src="./imagenes/svg-_logo-shotokan.svg" alt="logo club shotokan"> 
+       <img class="animate__rollIn img_xs margin-estrecho" src="./imagenes/svg-_logo-shotokan.svg" alt="logo club shotokan"> 
      </a>
-
+    
      <div class="foot-icon">
         <a href="https://instagram.com/karate.shotokan.medellin?igshid=YmMyMTA2M2Y=" target="_blank">
-         <i class="fa-brands fa-square-instagram fa-2xl"></i>
+         <i class="fa-brands fa-square-instagram fa-2xl margin-estrecho"></i>
         </a>
      
        <a href="https://www.facebook.com/shotokan.medellin.3" target="_blank">
-         <i class="fa-brands fa-square-facebook fa-2xl"></i>  
+         <i class="fa-brands fa-square-facebook fa-2xl margin-estrecho"></i>  
         </a>
      
         <a href="https://youtube.com/channel/UC8JQWgCoFkhNho66eFUyJCA" target="_blank">
-         <i class="fa-brands fa-square-youtube fa-2xl"></i>  
+         <i class="fa-brands fa-square-youtube fa-2xl margin-estrecho"></i>  
        </a>
-   </div>
- </footer>
+    </div>
+    </footer>
    
       <!-- wow js -->
   <script src="../LauraHenaoTovar/2.js/wow.min.js" type="text/javascript"></script>

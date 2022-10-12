@@ -12,6 +12,8 @@
     margin-top: map-get($map: $margings, $key: 'arriba-normal');
 }
 
+
+
 #articles-neg {
     background-color:$negro-alfa90;
     color:$blanco;
@@ -31,7 +33,11 @@
 //otros
 .bg_dark{
     background-color: $negro-alfa90;
-    margin: auto auto 10px auto;
+    margin-bottom: map-get($map: $margings, $key: 'abajo-normal');;
     height: map-get($map: $franjas-height, $key: 'franjaMD');
     color: $blanco;
+}
+
+.parrafo{
+    margin-bottom: map-get($map: $margings, $key: 'arriba-normal');
 }

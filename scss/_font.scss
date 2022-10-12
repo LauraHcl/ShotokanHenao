@@ -21,6 +21,7 @@ $text-weight:(
 $textSm:  1rem;
 $textMd: 1.5rem;
 $textLg: 2.5rem;
+$textxxl: 10rem;
 
 //archivo
 .decoration-none{
@@ -54,6 +55,17 @@ $textLg: 2.5rem;
     font-size: $textMd;
 }
 
+.font-xxl{
+    font-size: $textxxl;
+}
+
+.font-center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .text-vertical{
     writing-mode: vertical-rl;
     font-weight: map-get($map:  $text-weight, $key:'textbold');
@@ -82,12 +94,12 @@ $textLg: 2.5rem;
 }
 
 #titulo-1_japon{
-    @extend #titulo-1;
+    @extend #titulo-1 ;
     font-family: $secondaryfont;
 }
 
 
-//figures de 
+//figures 
 #font_figure{
     text-align: center;
     color: $keycolor;

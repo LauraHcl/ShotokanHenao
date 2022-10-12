@@ -1,8 +1,10 @@
 //imagen
-#botonera{
-    img{
-    width: map-get($map: $imagenes-size, $key: 'imgXS');
-    }   
+#botonera {
+    background-color: $negro-alfa90;
+    color: $blanco;
+     img{
+     width: map-get($map: $imagenes-size, $key: 'imgXS');
+     }   
    }
 
 #navbarSupportedContent{
@@ -36,7 +38,7 @@ nav{
 //----------inicia footer------------
 
 #footer-{
-    @include flex(inherit, center, space-around, nowrap);
+    @include flex(inherit, space-around, center, nowrap);
     padding: 20px 15%;
     background-color: $negro-alfa90;
     margin-top: map-get($map: $margings, $key: 'arriba-ancho');
@@ -51,4 +53,3 @@ nav{
     @include flex(inherit, space-around, center, nowrap);
     margin: map-get($map: $margings, $key: 'arriba-normal');
 }
-

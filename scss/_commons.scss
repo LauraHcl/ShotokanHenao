@@ -11,14 +11,16 @@ $amarillo: rgba(233, 210, 0, 0.63);
 $verde-alfa: rgba(0, 92, 0, 0.747);
 $verde: rgba(0, 92, 0);
 
+
+//Bg
+$tigre-texturagris-light: url("../imagenes/tig-gray-textured-background.webp");
+$tigre-texturagris-dark: url("../imagenes/tig-graydark-textured");
+
+
 //maps SASS
-$background-img: (
-    'tigre-texturagris-light': url("../imagenes/tig-gray-textured-background.jpg"),
-    'tigre-texturagris-dark': url("../imagenes/tig-graydark-textured"),
-);
 
 $margings: (
-    'normal': 20px 20px,
+    'normal': 20px 20px 20px 20px,
     'estrecho': 10px 10px,
     'moderado': 30px 30px,
     'ancho': 40px 40px,
@@ -39,6 +41,7 @@ $paddings:(
     'estrecho': 10px 10px,
     'moderado': 30px 30px,
     'ancho': 40px 40px,
+    'laterales': 10px 30px,
 
     'arriba-normal': 20px,
     'arriba-estrecho': 10px,
@@ -69,20 +72,24 @@ $franjas-height:(
 'franjaMD': 150px,
 );
 
-@mixin bg-paginas100 ($imagen, $size){
+@mixin bg-paginas100 ($imagen){
     background-image: $imagen;
-    background-size: $size;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .bg-pagina-dark{
-    @include bg-paginas100('tigre-texturagris-dark', cover)
+    @include bg-paginas100 ($tigre-texturagris-dark);
 }
 
 .bg-pagina-light{
-    @include bg-paginas100('tigre-texturagris-light', cover)
+    @include bg-paginas100 ($tigre-texturagris-light);
+}
+
+.bg-blanco-page{
+    @include bg-paginas100 ($blancoGris);
 }
 
 @mixin flex($direc, $justify, $align, $wrap) {
@@ -105,14 +112,27 @@ $franjas-height:(
 }
 
 
-.bg-black{
+#fondo-black{
     background-color: $negro-alfa90;
     color: $blanco;
     }
 
+.bg-black{
+    background-color: $negro-alfa90;
+    color: $blanco; 
+}
+
 #bg-wite{
     background-color: $blanco-alfa90;
     color: $keycolor;
+}
+
+#bg-alfa-withe{
+    background-color:$secondarycolor;
+}
+
+#bg-alfa-black{
+    background-color: $negro-alfa40;
 }
 
  //link de mapas y video
@@ -144,7 +164,9 @@ $franjas-height:(
 
 
 
-//imagenes general       .map get.
+
+
+//imagenes general     
 .img_m{
     width: map-get($map: $imagenes-size, $key: 'imgMD');
     }
@@ -156,7 +178,7 @@ $franjas-height:(
 }
 
 .img_m-bola-shadow{
-    @extend .img_m;
+    @extend .img_m ;
     border-radius: map-get($map:$bordes, $key: 'bordeBola');
     box-shadow: 2rem;
 }
@@ -195,15 +217,36 @@ $franjas-height:(
     margin: map-get($map: $margings, $key: 'normal');
 }
 
+.margin-lateral{
+    margin: map-get($map: $margings, $key: 'lateral');
+}
+
 .margin-moderado{
     margin: map-get($map: $margings, $key: 'moderado');
 }
 
+.margin-estrecho{
+    margin: map-get($map: $margings, $key: 'estrecho');
+}
+
+.margin-ancho{
+    margin: map-get($map: $margings, $key: 'ancho');
+}
+
+.marg-top-normal{
+    margin-top: map-get($map: $margings, $key: 'arriba-normal');
+}
+
+
+
 //align
+
 .item_colum{
     @include flex(column, center, center, nowrap);
-    width: map-get($map: $franjas-height, $key: 'franjaMD');
+    width: 100% ;
 }
+
+
 
 //TIENDA
 #productos{
@@ -224,9 +267,11 @@ $franjas-height:(
 #icons{
     @include flex(row, space-evenly, center, nowrap);
     background-color: $blanco-alfa40;
-    margin: map-get($map: $margings, $key: 'moderado');
-    height: 150px;
+    justify-content: space-evenly;
+    width: 100%;
+    border: map-get($map: $bordes, $key: 'bordeRedondeado');
 }
+
 
 .hist{
     @include flex(row, space-evenly, center, nowrap);
@@ -254,15 +299,36 @@ $franjas-height:(
     margin: map-get($map: $margings, $key: 'normal');
 }
 
+.enti{
+    @include flex(row, space-evenly, center, wrap); 
+}
+
 //MAPAS
 
 
 #mapas-flex{
-    @include flex(column, center, center, wrap);
-    margin: map-get($map: $margings, $key: 'normal');
-    align-content: center;
+    @include flex(row, center, space-evenly, nowrap);
+    margin: map-get($map: $margings, $key: 'estrecho');
 }
 
-#CardSize{
-    width: 45rem;
+#mapas-contacto{
+    section{
+        iframe{
+            width: 400px;
+        }
+    }
 }
+
+//clases
+#article-center{
+    @extend #articles-wi ;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+

@@ -33,9 +33,7 @@
     }
 
     #mapas-flex{
-      section{
-         width: 40rem;
-      }
+      @include flex(column, center, space-evenly, wrap);
     }
 
 
@@ -59,6 +57,16 @@
             width: map-get($map: $imagenes-size, $key: 'imgXS');
          }
       }
+   }
+
+   #mapas-contacto{
+      display: flex;
+      justify-content: center;
+        section{
+         iframe{
+            width: 240px;
+         }
+        }
    }
 
 }

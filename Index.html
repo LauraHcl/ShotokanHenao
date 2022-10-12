@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="inicio pagina de karate" content="En esta página mostramos de manera general lo que es nuestro club de karate shotokan y las novedades como lo es presentar la neva rama del con clases de karate-box y tambien entregar información principal como los horarios de clases y ultimas noticias sobre nuestros deportistas y las artes marciales">
+    <meta name="inicio pagina de karate">
+    <meta description="En esta página mostramos de manera general lo que es nuestro club de karate shotokan y las novedades como lo es presentar la neva rama del con clases de karate-box y tambien entregar información principal como los horarios de clases y ultimas noticias sobre nuestros deportistas y las artes marciales">
     <meta name="keywords" content="karate, boxeo, deporte, entrenamiento">
     <meta name="author" content="Laura Henao">
   <!-- Bootstrap CSS -->
@@ -20,8 +21,9 @@
 </head>
 
 <body class="bg-pagina-light">
+  
   <!-- inicia nav -->
-    <nav class="navbar navbar-expand-lg bg-black" id="botonera">
+    <nav class="navbar navbar-dark navbar-expand-lg" id="botonera">
         <div class="container-fluid">
             <a class="navbar-brand link-light decoration-none" href="Index.html">
               <img class="animate__rollIn" src="./imagenes/svg-_logo-shotokan.svg" alt="logo de karate shotokan" width="30" height="37" class="d-inline-block align-text-top">
@@ -44,17 +46,24 @@
               <li class="nav-item">
                 <a  class="nav-link link-light" href="nosotros.html">Nosotros</a>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link link-light dropdown-toggle" href="contactanos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contáctanos
                 </a>
                 <ul class="dropdown-menu">
                   <li>
+                    <a class="dropdown-item" href="contactanos.html">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg> Contacto</a></li>
+
+                  <li>
                     <a class="dropdown-item" href="maps.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                       <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                     </svg> Sedes</a></li>
                 </ul>
               </li>
+
             </ul>
           </div>
         </div>
@@ -98,9 +107,8 @@
     
         <section class="container text-center">
             <div class="row">
-              <div class="col">
-                <p id="parrafo-m"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus similique sed fuga unde mollitia sit perspiciatis excepturi animi? Atque quod repellendus porro consectetur neque expedita omnis? Architecto repudiandae iure sapiente? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam modi atque obcaecati suscipit eos possimus reprehenderit consectetur ea recusandae! Quod placeat doloribus, cumque cum et pariatur alias necessitatibus perferendis perspiciatis?</p>
-                <br>
+              <div class="parrafo col">
+                <p id="parrafo-m">Somos un club con una experianciade 16 años enseñando a cientos de niños, jovenes y adultos a desarrollar sus habilidades físicas y personales ligados a la marcialidad y los valores que caracterizan a esta disiplina de este arte marcial</p>
                 <a href="./nosotros.html">
                   <button type="button" class="btn btn-black">Conoce más...</button>
                 </a>
@@ -145,7 +153,7 @@
               </select>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-black">Enviar</button>
+              <a href="./404.html" class="btn btn-black">Enviar</a> <!-- error 404 --> 
             </div>
           </form>
         </section>
@@ -166,11 +174,11 @@
 
          
             <article id="articles-wi" class="card" style="width: 35rem;">
-              <img src="./imagenes/svg-_BOX_IMG-HORARIO-23.svg" class="card-img-top" alt="Horarios. para sede la mota: lunes a jueves de 5 a 7pm y en la sede estadio: sabado 10am a 1pm y domingo 9am a 12pm, los miercoles clase de reposicion 5pm">
+              <img src="./imagenes/svg-imagen-horario.svg" class="card-img-top" alt="Horarios. para sede la mota: lunes a jueves de 5 a 7pm y en la sede estadio: sabado 10am a 1pm y domingo 9am a 12pm, los miercoles clase de reposicion 5pm">
               <div class="card-body">
                 <h2 class="card-title japon-font_dark">Prográmate</h2>
                 <p class="card-text">El horario está sujeto a la disponibilidad de cupos en cada grupo.</p>
-                <a href="wa.link/2i2abf" class="btn btn-black">Inscribirme</a>
+                <a href="wa.link/2i2abf" class="btn btn-black" target="_blank">Inscribirme</a>
               </div>
             </article>
         
@@ -181,20 +189,20 @@
 
 <footer id="footer-">
   <a href="Index.html">  
-   <img class="animate__rollIn img_xs" src="./imagenes/svg-_logo-shotokan.svg" alt="logo club shotokan"> 
+   <img class="animate__rollIn img_xs margin-estrecho" src="./imagenes/svg-_logo-shotokan.svg" alt="logo club shotokan"> 
  </a>
 
  <div class="foot-icon">
     <a href="https://instagram.com/karate.shotokan.medellin?igshid=YmMyMTA2M2Y=" target="_blank">
-     <i class="fa-brands fa-square-instagram fa-2xl"></i>
+     <i class="fa-brands fa-square-instagram fa-2xl margin-estrecho"></i>
     </a>
  
    <a href="https://www.facebook.com/shotokan.medellin.3" target="_blank">
-     <i class="fa-brands fa-square-facebook fa-2xl"></i>  
+     <i class="fa-brands fa-square-facebook fa-2xl margin-estrecho"></i>  
     </a>
  
     <a href="https://youtube.com/channel/UC8JQWgCoFkhNho66eFUyJCA" target="_blank">
-     <i class="fa-brands fa-square-youtube fa-2xl"></i>  
+     <i class="fa-brands fa-square-youtube fa-2xl margin-estrecho"></i>  
    </a>
 </div>
 </footer>
