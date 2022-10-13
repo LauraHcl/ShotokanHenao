@@ -139,8 +139,12 @@ $franjas-height:(
 
 .mapas-s{
     border-radius: map-get($map: $bordes, $key: 'bordeRedondeado');
+}
 
-    }
+.width-mapas{
+   width: 40%;
+   justify-content: center;
+}
 
 //botones
 .btn-black{
@@ -319,9 +323,11 @@ $franjas-height:(
 }
 
 #mapas-contacto{
+    flex-direction: column;
+    flex-wrap: nowrap;
     section{
         iframe{
-            width: 400px;
+            width: 90%;
         }
     }
 }

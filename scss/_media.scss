@@ -33,7 +33,7 @@
     }
 
     #mapas-flex{
-      @include flex(column, center, space-evenly, wrap);
+      @include flex(column, center, space-evenly, nowrap);
     }
 
 
@@ -42,9 +42,6 @@
       justify-content: center;
    }
 
-   #mapas-flex{
-      flex-wrap: nowrap;
-   }
 
    #row-card{
       flex-wrap: nowrap;
@@ -60,20 +57,25 @@
    }
 
    #mapas-contacto{
-      display: flex;
       justify-content: center;
+      width: 400px;
         section{
          iframe{
-            width: 240px;
+            width: auto;
          }
         }
+   }
+
+   .width-mapas{
+      width: 100%;
    }
 
    .hist{
       flex-direction: column;
    }
 
-   .enti{}
+   .enti{
    flex-direction: column;
+   }
 }
 
